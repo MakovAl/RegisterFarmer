@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.register.serviceRF.model.Area" />
+	<import class="com.register.serviceRF.model.AreaSownField" />
+	<import class="com.register.serviceRF.model.Farmer" />
+	<class name="com.register.serviceRF.model.impl.AreaImpl" table="RF_Area">
+		<cache usage="read-write" />
+		<id name="areaId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="uuid" type="com.liferay.portal.dao.orm.hibernate.StringType" column="uuid_" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="title" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="areaCode" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="inArchive" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+	</class>
+	<class name="com.register.serviceRF.model.impl.AreaSownFieldImpl" table="RF_AreaSownField">
+		<cache usage="read-write" />
+		<id name="areaSownFieldsId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="uuid" type="com.liferay.portal.dao.orm.hibernate.StringType" column="uuid_" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="farmerId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="areaId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="com.register.serviceRF.model.impl.FarmerImpl" table="RF_Farmer">
+		<cache usage="read-write" />
+		<id name="farmerId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="uuid" type="com.liferay.portal.dao.orm.hibernate.StringType" column="uuid_" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="nameOrganization" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="organizationalLegalForm" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="INN" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="KPP" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="OGRN" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="registrationArea" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="areasSownFields" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="registrationDate" type="org.hibernate.type.TimestampType" />
+		<property name="inArchive" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+	</class>
+</hibernate-mapping>

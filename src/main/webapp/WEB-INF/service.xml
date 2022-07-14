@@ -1,0 +1,128 @@
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+
+<service-builder package-path="com.register.serviceRF">
+    <namespace>RF</namespace>
+    <entity name="Farmer" local-service="true" uuid="true">
+
+    	<!-- PK fields -->
+
+    	<!-- Group instance -->
+
+    	<!-- Audit fields -->
+
+
+    	<!-- PK fields -->
+
+    	<!-- Group instance -->
+
+    	<!-- Audit fields -->
+
+
+    	<!-- PK fields -->
+
+    	<column name="farmerId" primary="true" type="long"></column>
+
+    	<!-- Group instance -->
+
+    	<column name="groupId" type="long"></column>
+
+    	<!-- Audit fields -->
+
+    	<column name="companyId" type="long"></column>
+    	<column name="userId" type="long"></column>
+    	<column name="userName" type="String"></column>
+    	<column name="createDate" type="Date"></column>
+    	<column name="modifiedDate" type="Date"></column>
+        <column name="nameOrganization" type="String"></column>
+        <column name="organizationalLegalForm" type="String"></column>
+        <column name="INN" type="long"></column>
+        <column name="KPP" type="long"></column>
+        <column name="OGRN" type="long"></column>
+        <column name="registrationArea" type="String"></column>
+        <column name="areasSownFields" type="String"></column>
+        <column name="registrationDate" type="Date"></column>
+        <column name="inArchive" type="boolean"></column>
+        <finder name="groupId" return-type="Collection">
+            <finder-column name="groupId"></finder-column>
+        </finder>
+        <finder name="G_I" return-type="Collection">
+            <finder-column name="groupId"></finder-column>
+            <finder-column name="inArchive"></finder-column>
+        </finder>
+        <finder name="G_R" return-type="Collection">
+            <finder-column name="groupId"></finder-column>
+            <finder-column name="registrationArea"></finder-column>
+        </finder>
+    </entity>
+    <entity name="Area" local-service="true" uuid="true">
+
+    	<!-- PK fields -->
+
+    	<column name="areaId" primary="true" type="long"></column>
+
+    	<!-- Group instance -->
+
+    	<column name="groupId" type="long"></column>
+
+    	<!-- Audit fields -->
+
+    	<column name="companyId" type="long"></column>
+    	<column name="userId" type="long"></column>
+    	<column name="userName" type="String"></column>
+    	<column name="createDate" type="Date"></column>
+    	<column name="modifiedDate" type="Date"></column>
+        <column name="title" type="String"></column>
+        <column name="areaCode" type="long"></column>
+        <column name="inArchive" type="boolean"></column>
+        <finder name="groupId" return-type="Collection">
+            <finder-column name="groupId"></finder-column>
+        </finder>
+        <finder name="G_I" return-type="Collection">
+            <finder-column name="groupId"></finder-column>
+            <finder-column name="inArchive"></finder-column>
+        </finder>
+        <finder name="A_I" return-type="Collection">
+            <finder-column name="areaId"></finder-column>
+            <finder-column name="inArchive"></finder-column>
+        </finder>
+        <finder name="G_T" return-type="Collection">
+            <finder-column name="groupId"></finder-column>
+            <finder-column name="title"></finder-column>
+        </finder>
+        <finder name="title" return-type="Collection">
+            <finder-column name="title"></finder-column>
+        </finder>
+    </entity>
+    <entity name="AreaSownField" local-service="true" uuid="true">
+
+    	<!-- PK fields -->
+
+    	<column name="areaSownFieldsId" primary="true" type="long"></column>
+
+    	<!-- Group instance -->
+
+    	<column name="groupId" type="long"></column>
+
+    	<!-- Audit fields -->
+
+    	<column name="companyId" type="long"></column>
+    	<column name="userId" type="long"></column>
+    	<column name="userName" type="String"></column>
+    	<column name="createDate" type="Date"></column>
+    	<column name="modifiedDate" type="Date"></column>
+        <column name="farmerId" type="long"></column>
+        <column name="areaId" type="long"></column>
+        <finder name="groupId" return-type="Collection">
+            <finder-column name="groupId"></finder-column>
+        </finder>
+        <finder name="G_F" return-type="Collection">
+            <finder-column name="groupId"></finder-column>
+            <finder-column name="farmerId"></finder-column>
+        </finder>
+    </entity>
+    <exceptions>
+        <exception>Title</exception>
+        <exception>NameOrganization</exception>
+        <exception>INN</exception>
+    </exceptions>
+</service-builder>

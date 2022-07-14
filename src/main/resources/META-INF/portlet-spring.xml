@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.register.serviceRF.service.AreaLocalService" class="com.register.serviceRF.service.impl.AreaLocalServiceImpl" />
+	<bean id="com.register.serviceRF.service.AreaService" class="com.register.serviceRF.service.impl.AreaServiceImpl" />
+	<bean id="com.register.serviceRF.service.persistence.AreaPersistence" class="com.register.serviceRF.service.persistence.AreaPersistenceImpl" parent="basePersistence" />
+	<bean id="com.register.serviceRF.service.AreaSownFieldLocalService" class="com.register.serviceRF.service.impl.AreaSownFieldLocalServiceImpl" />
+	<bean id="com.register.serviceRF.service.AreaSownFieldService" class="com.register.serviceRF.service.impl.AreaSownFieldServiceImpl" />
+	<bean id="com.register.serviceRF.service.persistence.AreaSownFieldPersistence" class="com.register.serviceRF.service.persistence.AreaSownFieldPersistenceImpl" parent="basePersistence" />
+	<bean id="com.register.serviceRF.service.FarmerLocalService" class="com.register.serviceRF.service.impl.FarmerLocalServiceImpl" />
+	<bean id="com.register.serviceRF.service.FarmerService" class="com.register.serviceRF.service.impl.FarmerServiceImpl" />
+	<bean id="com.register.serviceRF.service.persistence.FarmerPersistence" class="com.register.serviceRF.service.persistence.FarmerPersistenceImpl" parent="basePersistence" />
+	<bean id="com.register.serviceRF.service.persistence.FarmerFinder" class="com.register.serviceRF.service.persistence.FarmerFinderImpl" parent="basePersistence" />
+</beans>

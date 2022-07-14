@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.register.serviceRF.model.Area">
+		<field name="uuid" type="String" />
+		<field name="areaId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="title" type="String" />
+		<field name="areaCode" type="long" />
+		<field name="inArchive" type="boolean" />
+	</model>
+	<model name="com.register.serviceRF.model.AreaSownField">
+		<field name="uuid" type="String" />
+		<field name="areaSownFieldsId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="farmerId" type="long" />
+		<field name="areaId" type="long" />
+	</model>
+	<model name="com.register.serviceRF.model.Farmer">
+		<field name="uuid" type="String" />
+		<field name="farmerId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="nameOrganization" type="String" />
+		<field name="organizationalLegalForm" type="String" />
+		<field name="INN" type="long" />
+		<field name="KPP" type="long" />
+		<field name="OGRN" type="long" />
+		<field name="registrationArea" type="String" />
+		<field name="areasSownFields" type="String" />
+		<field name="registrationDate" type="Date" />
+		<field name="inArchive" type="boolean" />
+	</model>
+</model-hints>
