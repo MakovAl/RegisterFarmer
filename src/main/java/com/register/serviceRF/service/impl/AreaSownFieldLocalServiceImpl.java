@@ -75,10 +75,8 @@ public class AreaSownFieldLocalServiceImpl
     areaSownField.setFarmerId(farmerId);
     areaSownField.setAreaId(areaId);
     
-	System.out.println("Sown field done");
 
     areaSownFieldPersistence.update(areaSownField);
-	System.out.println("Sown update done");
     
     return areaSownField;
 }
