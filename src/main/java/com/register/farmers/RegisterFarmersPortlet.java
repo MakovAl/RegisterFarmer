@@ -85,9 +85,6 @@ public class RegisterFarmersPortlet extends MVCPortlet {
 
 				SessionMessages.add(request, "farmerAdded");
 
-				//response.setRenderParameter("areaId",
-						//Long.toString(areaId));
-
 			} catch (Exception e) {
 
 				SessionErrors.add(request, e.getClass().getName());
@@ -116,8 +113,6 @@ public class RegisterFarmersPortlet extends MVCPortlet {
 				}
 				SessionMessages.add(request, "farmerAdded");
 
-				//response.setRenderParameter("areaId",
-						//Long.toString(areaId));
 
 			} catch (Exception e) {
 				SessionErrors.add(request, e.getClass().getName());
@@ -142,7 +137,6 @@ public class RegisterFarmersPortlet extends MVCPortlet {
 			
 			List<AreaSownField> areaSownFields = AreaSownFieldLocalServiceUtil.getAreaSownFields(serviceContext.getScopeGroupId(), farmerId);
 
-	        //response.setRenderParameter("areaId", Long.toString(areaId));
 			for(int i = 0; i < areaSownFields.size(); i++) {
 				AreaSownFieldLocalServiceUtil.deleteAreaSownField(areaSownFields.get(i).getAreaSownFieldsId(), serviceContext);
 			}
