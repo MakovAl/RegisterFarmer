@@ -3,7 +3,7 @@
 
 <display>
 	<category name="category.sample">
-		<portlet id="RegisterFarmers" />
+		<portlet id="RegisterFarmer" />
 		<portlet id="register-areas"></portlet>
 	</category>
 </display>

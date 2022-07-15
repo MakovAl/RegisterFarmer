@@ -2,8 +2,8 @@
 
 <portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0">
 	<portlet>
-		<portlet-name>RegisterFarmers</portlet-name>
-		<display-name>RegisterFarmers</display-name>
+		<portlet-name>RegisterFarmer</portlet-name>
+		<display-name>RegisterFarmer</display-name>
 		<portlet-class>com.register.farmers.RegisterFarmersPortlet</portlet-class>
 		<init-param>
 			<name>view-template</name>
@@ -14,9 +14,9 @@
 			<mime-type>text/html</mime-type>
 		</supports>
 		<portlet-info>
-			<title>RegisterFarmers</title>
-			<short-title>RegisterFarmers</short-title>
-			<keywords>RegisterFarmers</keywords>
+			<title>RegisterFarmer</title>
+			<short-title>RegisterFarmer</short-title>
+			<keywords>RegisterFarmer</keywords>
 		</portlet-info>
 		<security-role-ref>
 			<role-name>administrator</role-name>

@@ -3,11 +3,11 @@
 
 <liferay-portlet-app>
 	<portlet>
-		<portlet-name>RegisterFarmers</portlet-name>
+		<portlet-name>RegisterFarmer</portlet-name>
 		<icon>/icon.png</icon>
 		<indexer-class>com.register.search.FarmerIndexer</indexer-class>
 		<friendly-url-mapper-class>com.liferay.portal.kernel.portlet.DefaultFriendlyURLMapper</friendly-url-mapper-class>
-		<friendly-url-mapping>RegisterFarmers</friendly-url-mapping>
+		<friendly-url-mapping>RegisterFarmer</friendly-url-mapping>
 		<friendly-url-routes>com/register/register-friendly-url-routes.xml</friendly-url-routes>
 		<header-portlet-css>/css/main.css</header-portlet-css>
 		<footer-portlet-javascript>/js/main.js</footer-portlet-javascript>
