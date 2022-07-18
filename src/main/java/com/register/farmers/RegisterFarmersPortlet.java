@@ -43,10 +43,6 @@ public class RegisterFarmersPortlet extends MVCPortlet {
 		String stringDate = ParamUtil.getString(request,"registrationDate");
 		Date registrationDate = ParamUtil.getDate(request, "registrationDate", new SimpleDateFormat("dd.MM.yyyy"));
 		
-		System.out.println(registrationDate);
-		System.out.println(stringDate);
-		
-		
 		Boolean inArchive = ParamUtil.getBoolean(request, "inArchive");
 		long farmerId = ParamUtil.getLong(request, "farmerId");
 		long INN = ParamUtil.getLong(request, "INN");

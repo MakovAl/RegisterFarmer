@@ -22,6 +22,9 @@
 	</properties>
 	
 	<build>
+	
+	<finalName>${project.artifactId}-portlet</finalName>
+	
 		<plugins>
 			<plugin>
 				<groupId>com.liferay.maven.plugins</groupId>
