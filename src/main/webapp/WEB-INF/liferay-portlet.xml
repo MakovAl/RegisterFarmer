@@ -6,9 +6,6 @@
 		<portlet-name>RegisterFarmer</portlet-name>
 		<icon>/icon.png</icon>
 		<indexer-class>com.register.search.FarmerIndexer</indexer-class>
-		<friendly-url-mapper-class>com.liferay.portal.kernel.portlet.DefaultFriendlyURLMapper</friendly-url-mapper-class>
-		<friendly-url-mapping>RegisterFarmer</friendly-url-mapping>
-		<friendly-url-routes>com/register/register-friendly-url-routes.xml</friendly-url-routes>
 		<header-portlet-css>/css/main.css</header-portlet-css>
 		<footer-portlet-javascript>/js/main.js</footer-portlet-javascript>
 	</portlet>
@@ -16,9 +13,6 @@
 		<portlet-name>register-areas</portlet-name>
 		<icon>/icon.png</icon>
 		<indexer-class>com.register.search.AreaIndexer</indexer-class>
-		<friendly-url-mapper-class>com.liferay.portal.kernel.portlet.DefaultFriendlyURLMapper</friendly-url-mapper-class>
-		<friendly-url-mapping>register-areas</friendly-url-mapping>
-		<friendly-url-routes>com/register/register-area-friendly-url-routes.xml</friendly-url-routes>
 		<header-portlet-css>/css/main.css</header-portlet-css>
 		<footer-portlet-javascript>
 			/js/main.js
